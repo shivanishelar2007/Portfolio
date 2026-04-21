@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shivani Shelar Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <h2>Portfolio</h2>
+  <div>
+    <a onclick="show('home')">Home</a>
+    <a onclick="show('skills')">Skills</a>
+    <a onclick="show('interests')">Interests</a>
+    <a onclick="show('projects')">Projects</a>
+    <a onclick="show('certificates')">Certificates</a>
+    <a onclick="show('contact')">Contact</a>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="section active">
+  <div class="home">
+
+    <div class="home-text">
+      <h1>Shivani Ramdas Shelar</h1>
+      <h3 id="typing"></h3>
+      <p>
+        I am a First Year Computer Engineering student at MIT Academy of Engineering, Alandi.
+        I enjoy programming and building systems that solve real-world problems.
+        Currently learning advanced Python.
+      </p>
+
+      <div class="btn" onclick="show('projects')">View Projects</div>
+
+      <!-- Resume Button -->
+      <a href="https://drive.google.com/file/d/1eJi9B9WZaGOm-8ezEHIno17vEQ6i-WQU/view?usp=drivesdk" target="_blank" class="btn">
+        Download Resume
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="title">Skills</div>
+  <div class="grid">
+    <div class="card">
+      <h3>Programming</h3>
+      <div class="skill"><b>C Language</b><div class="small">Basics of logic and functions.</div><div class="bar"><div class="fill" style="width:70%"></div></div></div>
+      <div class="skill"><b>Python</b><div class="small">Basic to intermediate knowledge.</div><div class="bar"><div class="fill" style="width:75%"></div></div></div>
+      <div class="skill"><b>Advanced Python</b><div class="small">Currently learning real-world applications.</div><div class="bar"><div class="fill" style="width:50%"></div></div></div>
+    </div>
+    <div class="card">
+      <h3>Tools</h3>
+      <div class="skill"><b>Linux</b><div class="small">Basic terminal commands.</div><div class="bar"><div class="fill" style="width:60%"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERESTS -->
+<section id="interests" class="section">
+  <div class="title">Interests</div>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Software Development</h3>
+      <p>
+        I enjoy building real-world applications that solve practical problems.
+        I am interested in learning how large systems are designed and how different components work together.
+        I also like exploring new technologies and improving my coding skills regularly.
+        My goal is to become a skilled developer who can create efficient and scalable solutions.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Python Programming</h3>
+      <p>
+        Python is my favorite programming language because of its simplicity and power.
+        I use Python to solve coding problems, build small applications, and understand programming concepts.
+        I am currently learning advanced Python topics like file handling and real-world applications.
+        I aim to use Python in areas like automation and AI in the future.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Problem Solving</h3>
+      <p>
+        I enjoy solving logical and analytical problems using programming.
+        It helps me improve my thinking ability and coding efficiency.
+        I regularly practice coding questions and try to find optimized solutions.
+        Problem solving also helps me prepare for technical interviews.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>System Design</h3>
+      <p>
+        I am interested in understanding how software systems are structured and designed.
+        I like learning about how applications handle users, data, and performance.
+        Designing efficient and scalable systems is something I want to master.
+        This interest helps me think beyond just coding and focus on complete solutions.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="title">Projects</div>
+  <div class="grid">
+    <div class="card"><h3>Public Transportation Software</h3><div class="btn" onclick="show('p1')">View Project</div></div>
+    <div class="card"><h3>Python Learning Videos</h3><div class="btn" onclick="show('p2')">View Project</div></div>
+    <div class="card"><h3>Tours & Travels System</h3><div class="btn" onclick="show('p3')">View Project</div></div>
+  </div>
+</section>
+
+<!-- PROJECT DETAILS -->
+<section id="p1" class="section">
+  <div class="back" onclick="show('projects')">← Back to Projects</div>
+  <div class="title">Public Transportation Software</div>
+  <div class="card">
+    <p>
+      This project focuses on improving public transportation systems using modern technology.
+      It provides real-time bus tracking using GPS so users can know the exact location and arrival time.
+      The system also considers traffic conditions to give accurate time predictions.
+      It helps passengers reduce waiting time and plan their journey more efficiently.
+      Additional features can include route suggestions, estimated travel time, and alerts for delays.
+      This system aims to make public transport more smart, reliable, and user-friendly.
+    </p>
+  </div>
+</section>
+
+<section id="p2" class="section">
+  <div class="back" onclick="show('projects')">← Back to Projects</div>
+  <div class="title">Python Learning Videos</div>
+  <div class="card">
+    <p>
+      I have created educational videos to explain Python concepts in a simple and easy way.
+      These videos are designed especially for beginners to understand programming basics clearly.
+    </p>
+    <a href="https://youtu.be/IULAqtyWFzA" target="_blank" class="btn">Watch</a>
+  </div>
+</section>
+
+<section id="p3" class="section">
+  <div class="back" onclick="show('projects')">← Back to Projects</div>
+  <div class="title">Tours & Travels System</div>
+  <div class="card">
+    <p>
+      This project is a Tours and Travels Management System designed to simplify travel planning.
+      It allows users to explore various destinations, check tour packages, and book trips easily.
+      The system includes hotel booking, travel scheduling, and secure payment options.
+      It improves organization and reduces manual effort in travel management.
+    </p>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="section">
+  <div class="title">Certificates</div>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Cisco Python Essentials-1 </h3>
+      <p>Learned core Python concepts including variables, data types, loops, and functions with hands-on practice.</p>
+      <a href="https://drive.google.com/file/d/1hsTAhh0GjHRONXSN2SADOM_6FXgrw_0Q/view?usp=drivesdk" class="btn">View Certificate</a>
+    </div>
+
+    <div class="card">
+      <h3>Cisco Python Essentials-2</h3>
+      <p>Gained deeper knowledge of Python including modules, file handling, exceptions, and real-world problem solving.</p>
+      <a href="https://drive.google.com/file/d/15xW2f481LF1OOz4UNXpdinJYHKIL9PIM/view?usp=drivesdk" class="btn">View Certificate</a>
+    </div>
+
+    <div class="card">
+      <h3>NASSCOM Digital 101 (30 Hours)</h3>
+      <p>Completed a foundational course on digital technologies covering basics of IT, AI, cybersecurity, and digital skills.</p>
+      <a href="https://drive.google.com/file/d/1agWoGJBNQuzcZAhm5_IF6mB-6t2b5bzr/view?usp=drivesdk" class="btn">View Certificate</a>
+    </div>
+
+    
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="title">Contact Me</div>
+  <div class="card" style="max-width:520px">
+    <p style="margin-bottom:15px; color:var(--muted)">
+      📧 shivanishelar2007@gmail.com<br>
+      📱 9172942375
+    </p>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button class="btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
